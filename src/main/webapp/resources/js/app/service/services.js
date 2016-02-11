@@ -14,13 +14,13 @@ function CommonService($http) {
     return service;
 
     function registerAction(data) {
-        var url = "/register";
+        var url = "/bookity-app/register";
         var data = data;
         return $http.post(url, data).then(handleSuccess, handleError('Error on service!'));
     }
 
     function loadBookList(page){
-        var url = "/sc/books";
+        var url = "/bookity-app/sc/books";
         var config = {params: {page: page}};
         return $http.get(url, config).then(handleSuccess, handleError('Error on service!'));
     }

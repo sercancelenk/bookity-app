@@ -14,7 +14,7 @@ angular.module('app').controller('BooksController', function BooksController($sc
     $scope.pageToGet = -1;
     $scope.state = 'busy';
     $scope.lastAction = '';
-    $scope.url = "/sc/books";
+    $scope.url = "/bookity-app/sc/books";
     $scope.errorOnSubmit = false;
     $scope.errorIllegalAccess = false;
     $scope.displayMessageToUser = false;
@@ -48,7 +48,7 @@ angular.module('app').controller('BooksController', function BooksController($sc
 
     $scope.search = function () {
         $scope.isSearchQuery = true;
-        var url = "/sc/books/search";
+        var url = "/bookity-app/sc/books/search";
         $scope.lastAction = 'list';
         $scope.startDialogAjaxRequest();
 
