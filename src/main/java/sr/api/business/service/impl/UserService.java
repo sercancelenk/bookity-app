@@ -48,7 +48,7 @@ public class UserService implements IUserService {
         User user = iUserDao.save(newUser);
         if(user!=null){
             String serverIp = Utility.getServerBaseUrlFromRequest(request);
-            String activationUrl = serverIp + "/activation.do" + "?c=" + activationCode;
+            String activationUrl = serverIp + "/register/activation.do" + "?c=" + activationCode;
             mailService.sendRegistrationMail(email, activationUrl, locale);
         }
         return user != null ? true : false;

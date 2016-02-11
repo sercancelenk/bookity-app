@@ -19,7 +19,6 @@
 
         <property name="javaMailProperties">
             <util:properties location="classpath:javamail.properties"/>
-
         </property>
     </bean>
 
