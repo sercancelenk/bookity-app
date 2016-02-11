@@ -1,5 +1,6 @@
 package sr.api.Util;
 
+import org.apache.log4j.Logger;
 import org.springframework.mail.MailException;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessagePreparator;
@@ -13,10 +14,12 @@ import javax.mail.internet.MimeMessage;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * Created by sercan on 10/02/16.
  */
 public class MailUtil {
+    private static Logger logger = Logger.getLogger(MailUtil.class);
     private JavaMailSender mailSender;
 
     private String to;
@@ -46,7 +49,7 @@ public class MailUtil {
             this.mailSender.send(preparator);
         }
         catch (MailException ex) {
-
+            logger.error("Mail Send Error. Details: " + ex.getMessage());
         }
 
     }

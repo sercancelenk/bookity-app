@@ -1,0 +1,12 @@
+12:36:57,373  INFO StartupControl:31 - Application listener startup event fired !!
+12:36:57,703  INFO TestWorks:56 - ** userDAO loaded.
+12:36:57,724  INFO TestWorks:65 - ** Dummy user created
+12:36:57,741  INFO TestWorks:67 - ** Dummy user finding on db by username
+12:36:57,743  INFO TestWorks:70 - ** Dummy user finding on db on id
+12:36:57,764  INFO TestWorks:75 - ** Dummy user deleted.
+12:36:57,765  INFO TestWorks:77 - ** User DAO Test finished Successfully
+12:36:57,769  INFO TestWorks:83 - ** bookService loaded successfully
+12:36:57,802  INFO TestWorks:91 - ** Book Bane book created.
+12:36:57,825  INFO TestWorks:94 - ** Book search successfully
+12:36:57,840  INFO TestWorks:97 - ** Book deleted successfully
+12:36:57,841  INFO TestWorks:98 - ** Book Service Test finished successfully
