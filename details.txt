@@ -1,0 +1,12 @@
+
+Kullandigim Teknolojiler
+Backend:
+Java, Spring MVC, Spring Rest(Jackson), Spring Security, Spring Data, Spring Tiles, MongoDB, JUnit , Java Mail, Aspectj, MongoDB, Hibernate ORM, Gson(Object Mapper)
+Frontend:
+AngularJS. Angular Rest, Thymeleaf Template Engine(Email icin), Bootstrap, 
+
+Onemli:
+1. Projenin ayaga kaldirilabilmesi icin, MongoDB veritabani kurulu olmalidir ve kullanici kayit isleminde email gondermek icin (ben gmail kullandim) herhangi bir gmail adresinin kullanici adi sifresine ihtiyac vardir.
+2. src/main/resources klasoru altinda yer alan application.properties dosyasina mongodb host, port bilgileri ile email kullanici adi, sifre bilgileri girilmelidir.
+3. sonra istenirse tomcat vb uzerinden, istenirse de proje dizininde terminal ekranindan "mvn jetty:run" seklinde calistiriabilir.
+4. sistemin yonetici kullanicisi admin@admin.com, sifresi : 123 tur. Yonetici hesabindan giris yapildigi takdirde kitaplar icin islemler(ekleme, cikarma, guncelleme) yapilabilir.

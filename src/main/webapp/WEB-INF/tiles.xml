@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<!-- Base -->
+	<definition name="base.page" template="/public/template/base.jsp">
+		<put-attribute name="header" value="/public/template/header.jsp" />
+		<put-attribute name="footer" value="/public/template/footer.jsp" />
+	</definition>
+
+	<!-- Pages -->
+	<definition name="home" extends="base.page">
+		<put-attribute name="body" value="/protected/home.jsp" />
+		<put-attribute name="custom_bottom_scripts" value="" />
+	</definition>
+	<definition name="books" extends="base.page">
+		<put-attribute name="body" value="/protected/books/books.jsp" />
+		<put-attribute name="custom_bottom_scripts" value="/protected/books/books.custom.bottom.scripts.jsp" />
+	</definition>
+	<definition name="login" extends="base.page">
+		<put-attribute name="header" value="" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="body" value="/public/login/login.jsp" />
+		<put-attribute name="custom_bottom_scripts" value="/public/login/login.custom.bottom.scripts.jsp" />
+	</definition>
+
+	<definition name="register" extends="base.page">
+		<put-attribute name="header" value="" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="body" value="/public/register/register.jsp" />
+		<put-attribute name="custom_bottom_scripts" value="/public/register/register.custom.bottom.scripts.jsp" />
+	</definition>
+
+	<definition name="activatedpage" extends="base.page">
+		<put-attribute name="header" value="" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="body" value="/public/register/activated.jsp" />
+		<put-attribute name="custom_bottom_scripts" value="" />
+	</definition>
+</tiles-definitions>
