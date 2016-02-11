@@ -40,7 +40,7 @@ public class MailUtil {
                 mimeMessage.setRecipient(Message.RecipientType.TO,
                         new InternetAddress(to));
                 mimeMessage.setSubject(subject);
-                mimeMessage.setFrom(new InternetAddress("sparrowarr@gmail.com"));
+                mimeMessage.setFrom(new InternetAddress("info@byzas.in"));
                 mimeMessage.setContent(content, "text/html");
             }
         };
@@ -78,7 +78,7 @@ public class MailUtil {
             public void prepare(MimeMessage mimeMessage) throws Exception {
                 mimeMessage.setRecipients(Message.RecipientType.TO,recipientList);
                 mimeMessage.setSubject(subject);
-                mimeMessage.setFrom(new InternetAddress("sparrowarr@gmail.com"));
+                mimeMessage.setFrom(new InternetAddress("info@byzas.in"));
                 mimeMessage.setContent(content, "text/html");
             }
         };
