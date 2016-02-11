@@ -11,6 +11,7 @@
 
     <!-- Mail Sender -->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="protocol" value="${mail.protocol}"/>
         <property name="host" value="${mail.server.host}"/>
         <property name="port" value="${mail.server.port}" />
         <property name="username" value="${mail.server.username}" />
